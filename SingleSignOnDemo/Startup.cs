@@ -21,9 +21,9 @@ namespace SingleSignOnDemo
 
             app.UseOpenIdConnectAuthentication(new OpenIdConnectAuthenticationOptions
             {
-                Authority = "https://localhost:44303/identity",
+                Authority = "https://localhost:44305/identity",
                 ClientId = "mvc",
-                RedirectUri = "https://localhost:44304/",
+                RedirectUri = "https://localhost:44306/",
                 ResponseType = "id_token",
 
                 SignInAsAuthenticationType = "Cookies"
